@@ -690,63 +690,15 @@ LANGUAGE SWITCHER
 
 /* Адаптивность для мобильных */
 @media (max-width: 600px) {
-    .card {
-        position: relative;
-        padding: 15px;
-    }
-    
     .card-lang {
-        position: absolute;      /* Оставить абсолютное позиционирование */
-        top: 12px;               /* Отступ сверху */
-        right: 12px;             /* Отступ справа */
+        position: absolute;  
+        top: 12px;          
+        right: 12px;        
         margin: 0;
     }
     
     .card h2 {
-        padding-right: 80px;     /* Место для переключателя */
-        font-size: 1.1em;        /* Чуть меньше шрифт */
-        margin-bottom: 12px;
-    }
-    
-    .input-grid, .salts-grid, .results-grid, .ion-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .actions-section {
-        flex-direction: column;
-    }
-    
-    .btn {
-        width: 100%;
-    }
-    
-    header h1 {
-        font-size: 1.8em;
-        flex-direction: row;
-        gap: 8px;
-    }
-    
-    .site-logo {
-        width: 35px;
-        height: 35px;
-    }
-    
-    .subtitle {
-        font-size: 0.95em;
-        padding: 0 10px;
-    }
-    
-    .input-with-unit input {
-        min-width: 50px;
-    }
-    
-    .unit-inline {
-        min-width: 30px;
-    }
-    
-    .modal-content {
-        margin: 10% auto;
-        padding: 20px;
-        width: 95%;
+        padding-right: 80px; 
+        font-size: 1em;
     }
 }
