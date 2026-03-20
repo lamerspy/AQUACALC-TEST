@@ -41,6 +41,7 @@ const KH_TO_CACO3 = 17.848;
 // ============================================================================
 const translations = {
     ru: {
+        // Основные элементы
         subtitle: "Калькулятор реминерализации воды для аквариума",
         desired_params: "Желаемые параметры",
         gh_label: "Общая жёсткость (GH)",
@@ -64,9 +65,82 @@ const translations = {
         cacl2_anh: "CaCl₂ (безводный)",
         cacl2_2h2o: "CaCl₂·2H₂O (дигидрат)",
         mgso4_7h2o: "MgSO₄·7H₂O (эпсом)",
-        mgso4_anh: "MgSO₄ (безводный)"
+        mgso4_anh: "MgSO₄ (безводный)",
+        
+        // Экспорт
+        export_desired: "ЖЕЛАЕМЫЕ ПАРАМЕТРЫ",
+        export_dosage: "НЕОБХОДИМО ВНЕСТИ",
+        export_results: "РЕЗУЛЬТАТЫ РАСЧЁТА",
+        export_ions: "ИОННЫЙ СОСТАВ ВОДЫ",
+        export_gh: "Общая жёсткость (GH)",
+        export_kh: "Карбонатная жёсткость (KH)",
+        export_volume: "Объём воды",
+        export_ca_mg: "Соотношение Ca:Mg",
+        
+        // Модальное окно: Уведомление
+        important_notice: "⚠️ ВАЖНОЕ УВЕДОМЛЕНИЕ",
+        disclaimer_p1: "Данный калькулятор предоставлен исключительно в ознакомительных целях.",
+        disclaimer_p2: "Мы не несём ответственности за любые последствия, возникшие в результате использования полученных данных, включая вред здоровью рыб, повреждение оборудования или иные убытки.",
+        disclaimer_p3: "Перед применением любых препаратов рекомендуется:",
+        disclaimer_li1: "Проверить расчёты независимым источником.",
+        disclaimer_li2: "Начинать с меньших дозировок.",
+        disclaimer_li3: "Контролировать параметры воды тестами.",
+        disclaimer_li4: "Наблюдать за состоянием рыб.",
+        disclaimer_final: "Используя этот калькулятор, вы принимаете на себя полную ответственность за все действия и их последствия.",
+        
+        // Модальное окно: Лицензия
+        license: "📄 Лицензия",
+        prohibited: "1. ЗАПРЕЩЕНО:",
+        prohibited_li1: "Копирование, распространение или использование кода в коммерческих целях без письменного разрешения.",
+        prohibited_li2: "Изменение, модификация или создание производных продуктов.",
+        prohibited_li3: "Продажа, sublicensing или передача прав третьим лицам.",
+        permitted: "2. РАЗРЕШЕНО:",
+        permitted_li1: "Личное использование (некоммерческое).",
+        permitted_li2: "Просмотр кода в ознакомительных целях.",
+        commercial: "3. КОММЕРЧЕСКОЕ ИСПОЛЬЗОВАНИЕ:",
+        commercial_li1: "Доступно только после приобретения лицензии.",
+        commercial_li2: "Для покупки обращайтесь:",
+        responsibility: "4. ОТВЕТСТВЕННОСТЬ:",
+        responsibility_li1: "Программа предоставляется \"КАК ЕСТЬ\".",
+        responsibility_li2: "Авторы не несут ответственности за убытки.",
+        violation: "Нарушение данной лицензии влечёт юридическую ответственность.",
+        
+        // Модальное окно: Справка
+        help_title: "📖 Справка",
+        help_can_change: "1. Что можно выбрать:",
+        help_calcium: "<strong>Кальций (Ca²⁺)</strong> — выбирайте источник кальция из списка (гипс, CaCl₂ и др.).",
+        help_magnesium: "<strong>Магний (Mg²⁺)</strong> — выбирайте источник магния (эпсом, MgSO₄ и др.).",
+        help_potassium: "<strong>Калий (K⁺)</strong> — выбирайте источник калия (K₂SO₄, KCl, K₂CO₃).",
+        help_ratio: "<strong>Соотношение Ca:Mg</strong> — настройте пропорцию кальция к магнию (по умолчанию 4:1).",
+        help_gh_kh: "<strong>GH, KH, Объём</strong> — укажите целевые параметры воды.",
+        help_cannot_change: "2. Что нельзя выбрать:",
+        help_sodium: "<strong>Натрий (Na⁺)</strong> — рассчитывается автоматически из KH (через NaHCO₃).",
+        help_potassium_fixed: "<strong>Калий (K⁺)</strong> — зафиксирован на уровне <strong>3.0 мг/л</strong> (оптимально для рыб).",
+        help_export: "3. Результат экспорта:",
+        help_export_1: "Нажмите \"Скачать отчёт (HTML)\" для сохранения рецепта.",
+        help_export_2: "Отчёт содержит все параметры и дозировки солей.",
+        help_export_3: "Можно открыть в любом браузере или распечатать.",
+        help_note: "⚠️ Цифры в калькуляторе ≠ параметры в воде; всегда перепроверяйте тестами.",
+        
+        // Модальное окно: Поддержка
+        support_title: "💖 Поддержать проект",
+        support_header: "💳 SUPPORT AQUACALC",
+        support_desc: "AquaCalc — бесплатный калькулятор для аквариумистов.",
+        support_greeting: "Привет!",
+        support_text1: "Этот калькулятор создан энтузиастами для аквариумистов.",
+        support_text2: "Мы делаем его бесплатным и доступным для всех.",
+        support_text3: "Если проект оказался полезным для вас, вы можете поддержать его развитие:",
+        support_ways: "Способы поддержки:",
+        support_way1: "<strong>💰 Финансово</strong> — любая сумма поможет оплатить хостинг и домен.",
+        support_way2: "<strong>📢 Рассказать друзьям</strong> — поделитесь ссылкой с другими аквариумистами.",
+        support_way3: "<strong>⭐ Оставить отзыв</strong> — ваш фидбек помогает улучшать калькулятор.",
+        support_way4: "<strong>🐛 Сообщить об ошибке</strong> — помогите сделать проект лучше.",
+        support_wallets: "Кошельки для поддержки:",
+        support_contact: "Для связи:",
+        support_thanks: "⚠️ Спасибо за вашу поддержку! Вместе мы сделаем проект лучше.",
     },
     en: {
+        // Main elements
         subtitle: "Aquarium Water Remineralization Calculator",
         desired_params: "Target Parameters",
         gh_label: "General Hardness (GH)",
@@ -90,7 +164,79 @@ const translations = {
         cacl2_anh: "CaCl₂ (anhydrous)",
         cacl2_2h2o: "CaCl₂·2H₂O (dihydrate)",
         mgso4_7h2o: "MgSO₄·7H₂O (epsom)",
-        mgso4_anh: "MgSO₄ (anhydrous)"
+        mgso4_anh: "MgSO₄ (anhydrous)",
+        
+        // Export
+        export_desired: "TARGET PARAMETERS",
+        export_dosage: "REQUIRED DOSAGE",
+        export_results: "CALCULATION RESULTS",
+        export_ions: "WATER ION COMPOSITION",
+        export_gh: "General Hardness (GH)",
+        export_kh: "Carbonate Hardness (KH)",
+        export_volume: "Water Volume",
+        export_ca_mg: "Ca:Mg Ratio",
+        
+        // Modal: Notice
+        important_notice: "⚠️ IMPORTANT NOTICE",
+        disclaimer_p1: "This calculator is provided for informational purposes only.",
+        disclaimer_p2: "We are not responsible for any consequences resulting from the use of this data, including harm to fish, equipment damage, or other losses.",
+        disclaimer_p3: "Before using any compounds, it is recommended to:",
+        disclaimer_li1: "Verify calculations with an independent source.",
+        disclaimer_li2: "Start with lower dosages.",
+        disclaimer_li3: "Monitor water parameters with tests.",
+        disclaimer_li4: "Observe fish condition.",
+        disclaimer_final: "By using this calculator, you accept full responsibility for all actions and consequences.",
+        
+        // Modal: License
+        license: "📄 License",
+        prohibited: "1. PROHIBITED:",
+        prohibited_li1: "Copying, distributing, or using the code for commercial purposes without written permission.",
+        prohibited_li2: "Modifying, adapting, or creating derivative works.",
+        prohibited_li3: "Selling, sublicensing, or transferring rights to third parties.",
+        permitted: "2. PERMITTED:",
+        permitted_li1: "Personal, non-commercial use.",
+        permitted_li2: "Viewing source code for educational purposes.",
+        commercial: "3. COMMERCIAL USE:",
+        commercial_li1: "Available only after purchasing a license.",
+        commercial_li2: "For licensing contact:",
+        responsibility: "4. LIABILITY:",
+        responsibility_li1: "Software is provided \"AS IS\".",
+        responsibility_li2: "Authors are not liable for any damages.",
+        violation: "Violation of this license entails legal liability.",
+        
+        // Modal: Help
+        help_title: "📖 Help",
+        help_can_change: "1. What you can select:",
+        help_calcium: "<strong>Calcium (Ca²⁺)</strong> — choose calcium source from the list (gypsum, CaCl₂, etc.).",
+        help_magnesium: "<strong>Magnesium (Mg²⁺)</strong> — choose magnesium source (epsom, MgSO₄, etc.).",
+        help_potassium: "<strong>Potassium (K⁺)</strong> — choose potassium source (K₂SO₄, KCl, K₂CO₃).",
+        help_ratio: "<strong>Ca:Mg Ratio</strong> — set calcium to magnesium proportion (default 4:1).",
+        help_gh_kh: "<strong>GH, KH, Volume</strong> — specify target water parameters.",
+        help_cannot_change: "2. What you cannot select:",
+        help_sodium: "<strong>Sodium (Na⁺)</strong> — calculated automatically from KH (via NaHCO₃).",
+        help_potassium_fixed: "<strong>Potassium (K⁺)</strong> — fixed at <strong>3.0 mg/L</strong> (optimal for fish).",
+        help_export: "3. Export result:",
+        help_export_1: "Click \"Download Report (HTML)\" to save the recipe.",
+        help_export_2: "Report contains all parameters and salt dosages.",
+        help_export_3: "Can be opened in any browser or printed.",
+        help_note: "⚠️ Calculator numbers ≠ water parameters; always verify with tests.",
+        
+        // Modal: Support
+        support_title: "💖 Support Project",
+        support_header: "💳 SUPPORT AQUACALC",
+        support_desc: "AquaCalc is a free calculator for aquarists.",
+        support_greeting: "Hello!",
+        support_text1: "This calculator is created by enthusiasts for aquarists.",
+        support_text2: "We make it free and accessible for everyone.",
+        support_text3: "If the project was useful for you, you can support its development:",
+        support_ways: "Ways to support:",
+        support_way1: "<strong>💰 Financially</strong> — any amount will help pay for hosting and domain.",
+        support_way2: "<strong>📢 Tell friends</strong> — share the link with other aquarists.",
+        support_way3: "<strong>⭐ Leave a review</strong> — your feedback helps improve the calculator.",
+        support_way4: "<strong>🐛 Report a bug</strong> — help make the project better.",
+        support_wallets: "Wallets for support:",
+        support_contact: "For contact:",
+        support_thanks: "⚠️ Thank you for your support! Together we will make the project better.",
     }
 };
 
@@ -109,10 +255,11 @@ function loadLanguage() {
 
 function updateLanguageUI() {
     // Перевод всех элементов с data-i18n
+    // Используем innerHTML для поддержки HTML-тегов внутри текста
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         if (translations[currentLang][key]) {
-            el.textContent = translations[currentLang][key];
+            el.innerHTML = translations[currentLang][key];
         }
     });
     
@@ -378,13 +525,13 @@ function resetSettings() {
 function exportToHtml() {
     const now = new Date().toLocaleString(currentLang === 'ru' ? 'ru-RU' : 'en-US');
     const getVal = (id) => document.getElementById(id).textContent;
-    const t = translations[currentLang];
     
     const html = `<!DOCTYPE html>
 <html lang="${currentLang}">
 <head>
     <meta charset="UTF-8">
-    <title>AquaCalc Log</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${translations[currentLang].export_title}</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
@@ -398,24 +545,114 @@ function exportToHtml() {
             font-size: 15px;
             min-height: 100vh;
         }
-        .header { text-align: center; padding: 18px 0; margin-bottom: 18px; border-bottom: 1px solid rgba(34, 211, 238, 0.3); }
-        .header h1 { color: #22D3EE !important; font-size: 1.5em; margin-bottom: 6px; }
+        .header {
+            text-align: center;
+            padding: 18px 0;
+            margin-bottom: 18px;
+            border-bottom: 1px solid rgba(34, 211, 238, 0.3);
+        }
+        .header h1 {
+            color: #22D3EE !important;
+            font-size: 1.5em;
+            margin-bottom: 6px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        .header p {
+            color: #7DD3FC !important;
+            font-size: 0.95em;
+        }
         .section {
             background: linear-gradient(180deg, rgba(15, 52, 96, 0.98) 0%, rgba(8, 47, 73, 0.98) 100%);
-            padding: 15px 18px; margin: 14px 0; border-radius: 9px;
+            padding: 15px 18px;
+            margin: 14px 0;
+            border-radius: 9px;
             border: 1px solid rgba(34, 211, 238, 0.35);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
         }
-        .section h2 { color: #22D3EE !important; margin: 0 0 12px 0; padding-bottom: 9px; border-bottom: 1px solid rgba(34, 211, 238, 0.3); font-size: 1.15em; }
-        table { width: 100%; border-collapse: collapse; }
-        td { padding: 10px 7px; border-bottom: 1px solid rgba(34, 211, 238, 0.15); color: #E0F2FE !important; }
-        td:first-child { font-weight: 600; color: #7DD3FC !important; }
-        td:last-child { text-align: right; }
+        .section h2 {
+            color: #22D3EE !important;
+            margin: 0 0 12px 0;
+            padding-bottom: 9px;
+            border-bottom: 1px solid rgba(34, 211, 238, 0.3);
+            font-size: 1.15em;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th {
+            background: rgba(21, 94, 117, 0.9);
+            color: #67E8F9 !important;
+            padding: 10px 7px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85em;
+            border: 1px solid rgba(34, 211, 238, 0.2);
+        }
+        td {
+            padding: 10px 7px;
+            border-bottom: 1px solid rgba(34, 211, 238, 0.15);
+            color: #E0F2FE !important;
+        }
+        td:first-child {
+            font-weight: 600;
+            color: #7DD3FC !important;
+        }
+        td:last-child {
+            text-align: right;
+        }
         .value-box {
             background: linear-gradient(135deg, rgba(21, 94, 117, 0.95) 0%, rgba(15, 52, 96, 0.95) 100%);
-            padding: 6px 12px; border-radius: 6px; border: 1px solid rgba(34, 211, 238, 0.4);
-            display: inline-block; color: #67E8F9 !important; font-weight: bold;
+            padding: 6px 12px;
+            border-radius: 6px;
+            border: 1px solid rgba(34, 211, 238, 0.4);
+            display: inline-block;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            color: #67E8F9 !important;
+            font-weight: bold;
         }
-        .footer { text-align: center; margin-top: 22px; padding-top: 16px; border-top: 1px solid rgba(34, 211, 238, 0.3); color: #7DD3FC !important; font-size: 0.9em; }
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin: 12px 0 16px 0;
+        }
+        .summary-card {
+            background: linear-gradient(180deg, rgba(21, 94, 117, 0.95) 0%, rgba(15, 52, 96, 0.95) 100%);
+            padding: 18px 12px;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px solid rgba(34, 211, 238, 0.4);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        .summary-card .label {
+            color: #22D3EE !important;
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-bottom: 10px;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        }
+        .summary-card .value {
+            color: #67E8F9 !important;
+            font-size: 1.4em;
+            font-weight: bold;
+            font-family: "Consolas", monospace;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+        }
+        .footer {
+            text-align: center;
+            margin-top: 22px;
+            padding-top: 16px;
+            border-top: 1px solid rgba(34, 211, 238, 0.3);
+            color: #7DD3FC !important;
+            font-size: 0.9em;
+        }
+        @media (max-width: 600px) {
+            .summary-grid { grid-template-columns: 1fr; }
+            td, th { padding: 7px 5px; font-size: 0.9em; }
+            body { padding: 10px; }
+        }
     </style>
 </head>
 <body>
@@ -423,17 +660,19 @@ function exportToHtml() {
         <h1>🐟 AquaCalc Log</h1>
         <p>${now}</p>
     </div>
+
     <div class="section">
-        <h2>${t.export_desired || 'Target Parameters'}</h2>
+        <h2>${translations[currentLang].export_desired}</h2>
         <table>
-            <tr><td>${t.gh_label}</td><td><span class="value-box">${document.getElementById('editHardness').value} °dGH</span></td></tr>
-            <tr><td>${t.kh_label}</td><td><span class="value-box">${document.getElementById('editKH').value} °dKH</span></td></tr>
-            <tr><td>${t.volume_label}</td><td><span class="value-box">${document.getElementById('editVolume').value} ${t.liters}</span></td></tr>
-            <tr><td>${t.ca_mg_ratio}</td><td><span class="value-box">${document.getElementById('Ca_Mg').value} : 1</span></td></tr>
+            <tr><td>${translations[currentLang].export_gh}</td><td><span class="value-box">${document.getElementById('editHardness').value} °dGH</span></td></tr>
+            <tr><td>${translations[currentLang].export_kh}</td><td><span class="value-box">${document.getElementById('editKH').value} °dKH</span></td></tr>
+            <tr><td>${translations[currentLang].export_volume}</td><td><span class="value-box">${document.getElementById('editVolume').value} ${currentLang === 'ru' ? 'л' : 'L'}</span></td></tr>
+            <tr><td>${translations[currentLang].export_ca_mg}</td><td><span class="value-box">${document.getElementById('Ca_Mg').value} : 1</span></td></tr>
         </table>
     </div>
+
     <div class="section">
-        <h2>${t.add_dosage}</h2>
+        <h2>${translations[currentLang].export_dosage}</h2>
         <table>
             <tr><td>${getVal('saltCaName')}</td><td><span class="value-box">${getVal('lblCaValue')}</span></td></tr>
             <tr><td>${getVal('saltMgName')}</td><td><span class="value-box">${getVal('lblMgValue')}</span></td></tr>
@@ -441,9 +680,41 @@ function exportToHtml() {
             <tr><td>${getVal('saltKName')}</td><td><span class="value-box">${getVal('Label_K')}</span></td></tr>
         </table>
     </div>
+
+    <div class="section">
+        <h2>${translations[currentLang].export_results}</h2>
+        <div class="summary-grid">
+            <div class="summary-card">
+                <div class="label">TDS</div>
+                <div class="value">${getVal('Label_TDC')}</div>
+            </div>
+            <div class="summary-card">
+                <div class="label">TH (CaCO₃)</div>
+                <div class="value">${getVal('Label_TH_CaCO3')}</div>
+            </div>
+            <div class="summary-card">
+                <div class="label">KH</div>
+                <div class="value">${getVal('Label_KH')}</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>${translations[currentLang].export_ions}</h2>
+        <table>
+            <tr><td>Ca²⁺</td><td>${getVal('Label3')}</td></tr>
+            <tr><td>Mg²⁺</td><td>${getVal('Label10')}</td></tr>
+            <tr><td>Na⁺</td><td>${getVal('Label_Na')}</td></tr>
+            <tr><td>K⁺</td><td>${getVal('Label_Ka')}</td></tr>
+            <tr><td>SO₄²⁻</td><td>${getVal('Label15')}</td></tr>
+            <tr><td>Cl⁻</td><td>${getVal('Label5')}</td></tr>
+            <tr><td>HCO₃⁻</td><td>${getVal('Label_HCO3')}</td></tr>
+        </table>
+    </div>
+
     <div class="footer">
         <p>PlecoHobby © ${new Date().getFullYear()}</p>
-        <p>${t.footer_slogan}</p>
+        <p>${translations[currentLang].footer_slogan}</p>
     </div>
 </body>
 </html>`;
@@ -459,6 +730,7 @@ function exportToHtml() {
     URL.revokeObjectURL(url);
 }
 
+     
 // ============================================================================
 // МОДАЛЬНЫЕ ОКНА
 // ============================================================================
