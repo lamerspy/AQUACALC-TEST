@@ -68,6 +68,7 @@ const translations = {
         mgso4_anh: "MgSO₄ (безводный)",
         
         // Экспорт
+        export_title: "AquaCalc Log", 
         export_desired: "ЖЕЛАЕМЫЕ ПАРАМЕТРЫ",
         export_dosage: "НЕОБХОДИМО ВНЕСТИ",
         export_results: "РЕЗУЛЬТАТЫ РАСЧЁТА",
@@ -167,6 +168,7 @@ const translations = {
         mgso4_anh: "MgSO₄ (anhydrous)",
         
         // Export
+        export_title: "AquaCalc Log", 
         export_desired: "TARGET PARAMETERS",
         export_dosage: "REQUIRED DOSAGE",
         export_results: "CALCULATION RESULTS",
